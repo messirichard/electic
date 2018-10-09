@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+	<item name="jquery" title="jQuery">
+		<js>
+			<include handle="jquery" local="jquery-1.11.1.min.js"></include>
+		</js>
+	</item>
+	<item name="mootools" title="Mootools">
+		<js>
+			<include handle="mootools" local="MooTools-Core-1.5.2.js"></include>
+		</js>
+	</item>
+	<item name="font-awsome" title="Font Awsome">
+		<css>
+			<include handle="font-awsome" local="font-awsome/css/font-awesome.min.css"></include>
+		</css>
+	</item>
+	<item name="owl-carousel" title="Owl Carousel">
+		<css>
+			<include handle="owl-carousel" local="owl-carousel/assets/owl.carousel.css"></include>
+		</css>
+		<js>
+			<include handle="owl-carousel" local="owl-carousel/owl.carousel.min.js"></include>
+		</js>
+	</item>
+</library>

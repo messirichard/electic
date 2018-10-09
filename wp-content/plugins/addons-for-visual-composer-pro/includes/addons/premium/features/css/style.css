@@ -1,0 +1,72 @@
+/* Features */
+@media only screen and (max-width: 767px) {
+  .lvca-features .lvca-feature {
+    margin-bottom: 50px; } }
+.lvca-features .lvca-feature:last-child {
+  margin-bottom: 0 !important; }
+.lvca-features .lvca-feature .lvca-subtitle {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ACB2BF;
+  margin-bottom: 5px; }
+  @media only screen and (max-width: 767px) {
+    .lvca-features .lvca-feature .lvca-subtitle {
+      font-size: 12px;
+      line-height: 18px; } }
+.lvca-features .lvca-feature h3 {
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 15px; }
+  @media only screen and (max-width: 1024px) {
+    .lvca-features .lvca-feature h3 {
+      font-size: 26px;
+      line-height: 36px; } }
+.lvca-features .lvca-feature .lvca-feature-details {
+  color: #9297A3;
+  font-size: 14px;
+  line-height: 24px; }
+  @media only screen and (max-width: 767px) {
+    .lvca-features .lvca-feature .lvca-feature-details {
+      font-size: 13px;
+      line-height: 22px; } }
+@media only screen and (min-width: 768px) {
+  .lvca-features .lvca-feature .lvca-text-content {
+    max-width: 520px;
+    padding: 0 50px; }
+    .vc_row[data-vc-stretch-content="true"] .lvca-features .lvca-feature .lvca-text-content {
+      max-width: 600px; }
+  .lvca-features .lvca-feature:nth-child(even) .lvca-image-content {
+    -webkit-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+    -moz-order: 2;
+    order: 2;
+    -ms-flex-order: 2; }
+  .lvca-features .lvca-feature:nth-child(even) .lvca-text-content {
+    -webkit-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+    -moz-order: 1;
+    order: 1;
+    -ms-flex-order: 1; } }
+
+@media only screen and (min-width: 768px) {
+  .lvca-features:not(.lvca-tiled) .lvca-feature {
+    margin-bottom: 80px; }
+    .lvca-features:not(.lvca-tiled) .lvca-feature .lvca-image-content {
+      max-width: 520px; }
+      .vc_row[data-vc-stretch-content="true"] .lvca-features:not(.lvca-tiled) .lvca-feature .lvca-image-content {
+        margin: 0 auto;
+        max-width: 640px; }
+    .vc_row[data-vc-stretch-content="true"] .lvca-features:not(.lvca-tiled) .lvca-feature .lvca-text-content {
+      margin: 0 auto; } }
+
+.lvca-features.lvca-tiled .lvca-feature .lvca-text-content {
+  margin: 0 auto;
+  /* Center the text */ }
+.lvca-features.lvca-tiled .lvca-feature .lvca-image-content img {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

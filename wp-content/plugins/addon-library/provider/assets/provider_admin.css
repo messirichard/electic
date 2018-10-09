@@ -1,0 +1,64 @@
+
+.______________GENERAL____________{}
+
+.unite-div-debug{
+	padding-left:180px;
+}
+
+.unite-view-wrapper{
+	margin-top:15px;
+}
+
+.uc-update-plugin-wrapper{
+	text-align:right;
+	padding-top:10px;
+}
+
+.______________DIALOG_IMAGE_SELECT____________{}
+
+.uc-dialog-image-select-inner{
+	height:350px;
+	overflow:auto;
+}
+
+.uc-dialog-image-select-bottom{
+	text-align:center;
+	margin-top:10px;
+}
+
+#uc_dialog_image_select_button{
+	margin-top:15px;
+	margin-bottom:10px;
+	font-size:16px;
+	font-weight:bold;
+	height:34px;
+	line-height:35px;
+	padding-left:12px;
+	padding-right:12px;
+}
+
+.______________GRID_BUILDER____________{}
+
+.uc-grid-builder-wrapper{
+	margin-right:25px;
+	margin-left:5px;
+}
+
+.______________LAYOUTS_LIST____________{}
+
+.wrap h1 .uc-button-import{
+	margin-left:10px;
+}
+
+.______________LAYOUTS_IMPORT_METABOX____________{}
+
+.uc-metabox-import-layout{
+	padding-top:10px;
+	height:40px;
+}
+
+.______________EDITOR_SETTING____________{}
+
+.unite-editor-setting-wrapper.unite-editor-wp{
+	min-width:500px;
+}

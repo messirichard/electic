@@ -1,0 +1,99 @@
+.lvca-gallery-carousel {
+  clear: both; }
+  @media only screen and (max-width: 1024px) {
+    .lvca-gallery-carousel .lvca-gallery-carousel-item {
+      margin-bottom: 20px; } }
+  .lvca-gallery-carousel .lvca-gallery-carousel-item .hentry {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image {
+    position: relative;
+    overflow: hidden; }
+    .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image img {
+      width: 100%;
+      display: block;
+      -webkit-transition: all .4s ease-in-out 0s;
+      transition: all .4s ease-in-out 0s; }
+    .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image:hover img {
+      -webkit-filter: brightness(50%);
+              filter: brightness(50%); }
+    .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info {
+      display: block;
+      text-align: center; }
+      .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-entry-info {
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 100%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-entry-title {
+        padding: 10px;
+        margin: 0;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #fff;
+        opacity: 0;
+        -webkit-transition: opacity .4s ease-in-out 0s;
+        transition: opacity .4s ease-in-out 0s; }
+        @media only screen and (max-width: 1024px) {
+          .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-entry-title {
+            font-size: 18px;
+            line-height: 26px; } }
+        .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-entry-title a {
+          display: inline;
+          color: #fff;
+          -webkit-transition: all .3s ease-in-out 0s;
+          transition: all .3s ease-in-out 0s;
+          border-bottom: 1px solid transparent; }
+          .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-entry-title a:hover {
+            border-bottom: 1px solid #ccc; }
+      .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-terms {
+        display: block;
+        color: #ddd;
+        font-size: 14px;
+        line-height: 22px;
+        font-style: italic;
+        opacity: 0;
+        -webkit-transition: opacity .4s ease-in-out 0s;
+        transition: opacity .4s ease-in-out 0s; }
+      .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-video-lightbox, .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-video-lightbox i {
+        color: #fff;
+        font-size: 32px;
+        line-height: 1;
+        -webkit-transition: color .4s ease-in-out 0s;
+        transition: color .4s ease-in-out 0s; }
+        .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-video-lightbox:hover, .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-video-lightbox i:hover {
+          color: #ddd; }
+      .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-lightbox-item {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        font-size: 22px;
+        line-height: 1;
+        display: block;
+        padding: 12px;
+        background: transparent;
+        opacity: 0;
+        -webkit-transition: all .3s ease-in-out 0s;
+        transition: all .3s ease-in-out 0s; }
+        .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-lightbox-item i {
+          font-size: 22px; }
+        .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image .lvca-image-info .lvca-lightbox-item:hover {
+          background: rgba(0, 0, 0, 0.5); }
+    .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image:hover .lvca-image-info .lvca-entry-title, .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image:hover .lvca-image-info .lvca-terms, .lvca-gallery-carousel .lvca-gallery-carousel-item .lvca-project-image:hover .lvca-image-info .lvca-lightbox-item {
+      opacity: 1; }
+  .lvca-gallery-carousel .lvca-gallery-carousel-item.lvca-youtube-type .lvca-image-info .lvca-entry-info, .lvca-gallery-carousel .lvca-gallery-carousel-item.lvca-vimeo-type .lvca-image-info .lvca-entry-info {
+    height: 110px; }
+
+/*# sourceMappingURL=style.css.map */

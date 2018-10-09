@@ -1,0 +1,165 @@
+@import "bourbon";
+@import "neat";
+@import "../lvca-lib";
+
+
+/*------------- Powertip Tooltip ----------- */
+
+/* PowerTip Plugin */
+#powerTip {
+  cursor: default;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  color: #fff;
+  display: none;
+  padding: 10px;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 2147483647;
+  }
+#powerTip:before {
+  content: "";
+  position: absolute;
+  }
+#powerTip.n:before, #powerTip.s:before {
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  left: 50%;
+  margin-left: -5px;
+  }
+#powerTip.e:before, #powerTip.w:before {
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  margin-top: -5px;
+  top: 50%;
+  }
+#powerTip.n:before {
+  border-top: 10px solid #333;
+  border-top: 10px solid rgba(0, 0, 0, 0.8);
+  bottom: -10px;
+  }
+#powerTip.e:before {
+  border-right: 10px solid #333;
+  border-right: 10px solid rgba(0, 0, 0, 0.8);
+  left: -10px;
+  }
+#powerTip.s:before {
+  border-bottom: 10px solid #333;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+  top: -10px;
+  }
+#powerTip.w:before {
+  border-left: 10px solid #333;
+  border-left: 10px solid rgba(0, 0, 0, 0.8);
+  right: -10px;
+  }
+#powerTip.ne:before, #powerTip.se:before {
+  border-right: 10px solid transparent;
+  border-left: 0;
+  left: 10px;
+  }
+#powerTip.nw:before, #powerTip.sw:before {
+  border-left: 10px solid transparent;
+  border-right: 0;
+  right: 10px;
+  }
+#powerTip.ne:before, #powerTip.nw:before {
+  border-top: 10px solid #333;
+  border-top: 10px solid rgba(0, 0, 0, 0.8);
+  bottom: -10px;
+  }
+#powerTip.se:before, #powerTip.sw:before {
+  border-bottom: 10px solid #333;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+  top: -10px;
+  }
+#powerTip.nw-alt:before, #powerTip.ne-alt:before,
+#powerTip.sw-alt:before, #powerTip.se-alt:before {
+  border-top: 10px solid #333;
+  border-top: 10px solid rgba(0, 0, 0, 0.8);
+  bottom: -10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  left: 10px;
+  }
+#powerTip.ne-alt:before {
+  left: auto;
+  right: 10px;
+  }
+#powerTip.sw-alt:before, #powerTip.se-alt:before {
+  border-top: none;
+  border-bottom: 10px solid #333;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+  bottom: auto;
+  top: -10px;
+  }
+#powerTip.se-alt:before {
+  left: auto;
+  right: 10px;
+  }
+
+/* ---------- Text Image Toggle Generic Styling ----------- */
+
+.lvca-image-text-toggle {
+  display: flex;
+  justify-content: space-between;
+  .lvca-image-content, .lvca-text-content {
+    @include align-self(center);
+    margin: 0;
+    width: 50%;
+    }
+  .lvca-image-content img {
+    display: block;
+    margin: 0 auto;
+    }
+  @include respond-to-max(767) {
+    @include flex-direction(column);
+    .lvca-image-content, .lvca-text-content {
+      width: 100%;
+      margin: 0;
+      }
+    .lvca-image-content {
+      @include order(1);
+      margin-bottom: 50px;
+      }
+    .lvca-text-content {
+      @include order(2);
+      padding: 0;
+      .vc_row.vc_row-no-padding[data-vc-stretch-content="true"] & {
+        padding: 0 20px;
+        }
+      }
+    }
+  }
+
+/* Fancybox custom styling */
+
+.fancybox-navigation button:active, .fancybox-navigation button:hover, .fancybox-navigation button:focus {
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  border: 0;
+  }
+button.fancybox-close-small:active, button.fancybox-close-small:hover, button.fancybox-close-small:focus {
+  position: absolute;
+  top: 0;
+  background: transparent;
+  border: 0;
+  }
+.fancybox-button:focus, .fancybox-button:hover {
+  background: rgba(30, 30, 30, 0.6);
+  border: 0;
+  }
+.fancybox-share__button:hover, .fancybox-share__button:focus {
+  color: #fff;
+  }
+.lvca-fancybox-video {
+  display: none;
+  }
+.lvca-fancybox-description {
+  font-size: 13px;
+  line-height: 18px;
+  color: #bbb;
+  margin: 5px 0 0 0;
+  }

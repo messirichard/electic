@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<fields>
+			<fieldset name="basic" label="Basic Settings">
+
+				<field name="row_container_width" 
+					type="text"
+					default=""
+					label="Row Container Width"
+					unit="px / %"
+					description="The container width of the row">
+				</field>
+				<field name="col_gutter" 
+					type="text"
+					default="" 
+					label="Column Gutter"
+					unit="px"
+					description="The padding left and right of the column">
+				</field>
+												
+				<field name="row_padding_top" 
+					type="text"
+					default=""
+					label="Row Padding Top"
+					unit="px"
+					description="The padding top of the row.">
+				</field>
+				
+				<field name="row_padding_bottom" 
+					type="text"
+					default=""
+					label="Row Padding Bottom"
+					unit="px"
+					description="The padding bottom of the row">
+				</field>
+				<field name="space_between_addons" 
+					type="text"
+					default=""
+					label="Space Between Addons"
+					unit="px"
+					description="The vertical space between addons of the row">
+				</field>
+				
+				<field name="row_background_color" 
+					type="color"
+					default="" 
+					label="Row Background Color"
+					description="The background color of the row">  
+				</field>
+				
+			</fieldset>		
+			
+			<fieldset name="advanced_settings" label="Advanced Settings">
+			
+				<field name="row_class" 
+					type="text"
+					default=""
+					label="Row Css Class"
+					class="alias"
+					description="additional css class of the row">
+				</field>
+				
+				<field name="row_id" 
+					type="text"
+					default=""
+					label="Row ID"
+					class="alias"
+					description="The ID of the row">
+				</field>
+						
+				<field name="row_css" 
+					type="textarea"
+					default=""
+					label="Row Add Css"
+					description="Any css you want to add to row div">
+				</field>
+				
+				<field name="row_container_css" 
+					type="textarea"
+					default=""
+					label="Row Container Css"
+					description="Any css you want to add to row container div">
+				</field>
+				
+			</fieldset>
+			<fieldset name="row_title" label="Row Title">
+				
+				<field name="row_show_title" 
+					type="radio"
+					default="default"
+					label="Show Title"
+					description="Show row title. If default, it will be controlled by grid setting">  
+						<option value="default" text="Default"></option>
+						<option value="yes" text="Yes"></option>
+						<option value="no" text="No"></option>
+				</field>
+			
+				<field name="row_title" 
+					type="text"
+					default=""
+					label="Row Title"
+					description="The title of the row">
+				</field>
+				
+			</fieldset>
+						
+	</fields>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fields>
+
+	<fieldset name="general" label="General Settings">
+		
+		<field type="hr"></field>
+		
+		<field name="edit_permission" 
+			type="list"
+			default="admin" 
+			label="Edit Permission"
+			description="The addon/assets edit will be visible to the selected user categories">  
+				<option value="admin" text="Admin"></option>
+				<option value="editor" text="Editor"></option>
+		</field>
+		
+		<field name="disable_autop_filters" 
+			type="boolean"
+			default="false" 
+			label="Disable Autop Filters"
+			description="Wordpress has some filters that can modify output html. disabling those filters will make the output exactly like in the addons demo">	
+		</field>
+		
+		<field name="manager_addons_view" 
+			type="list"
+			default="thumbs" 
+			label="Addons Display Type"
+			description="The display type of the addons in the addons manager">	
+				<option value="thumbs" text="Thumbs"></option>
+				<option value="info" text="Info"></option>
+		</field>
+		
+	</fieldset>
+	
+</fields>

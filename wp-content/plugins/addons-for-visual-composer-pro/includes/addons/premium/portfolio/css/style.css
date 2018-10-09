@@ -1,0 +1,11 @@
+.lvca-block-grid .lvca-block-inner {
+  -webkit-transition: opacity .4s ease-in 0s;
+  transition: opacity .4s ease-in 0s;
+  margin-left: -20px;
+  margin-right: -20px; }
+.lvca-block-grid .lvca-block-column {
+  padding: 20px; }
+.lvca-block-grid .lvca-module {
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

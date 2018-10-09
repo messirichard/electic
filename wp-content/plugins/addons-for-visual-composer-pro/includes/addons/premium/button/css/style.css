@@ -1,0 +1,13 @@
+input.lvca-button.lvca-with-icon span, input.lvca-button.lvca-with-icon img.lvca-thumbnail, button.lvca-button.lvca-with-icon span, button.lvca-button.lvca-with-icon img.lvca-thumbnail, a.lvca-button.lvca-with-icon span, a.lvca-button.lvca-with-icon img.lvca-thumbnail, .lvca-button.lvca-with-icon:active span, .lvca-button.lvca-with-icon:active img.lvca-thumbnail, .lvca-button.lvca-with-icon:visited span, .lvca-button.lvca-with-icon:visited img.lvca-thumbnail {
+  margin-right: 15px; }
+input.lvca-button.lvca-with-icon span, button.lvca-button.lvca-with-icon span, a.lvca-button.lvca-with-icon span, .lvca-button.lvca-with-icon:active span, .lvca-button.lvca-with-icon:visited span {
+  color: #fff;
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 1; }
+input.lvca-button.lvca-with-icon img.lvca-thumbnail, button.lvca-button.lvca-with-icon img.lvca-thumbnail, a.lvca-button.lvca-with-icon img.lvca-thumbnail, .lvca-button.lvca-with-icon:active img.lvca-thumbnail, .lvca-button.lvca-with-icon:visited img.lvca-thumbnail {
+  display: inline !important;
+  vertical-align: middle;
+  max-width: 50px; }
+
+/*# sourceMappingURL=style.css.map */

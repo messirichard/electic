@@ -1,0 +1,97 @@
+
+@import "../../../../../assets/css/lvca-lib";
+
+/* Features */
+
+.lvca-features {
+  .lvca-feature {
+    @include respond-to-max(767) {
+      margin-bottom: 50px;
+      }
+    &:last-child {
+      margin-bottom: 0 !important;
+      }
+    .lvca-subtitle {
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 2px;
+      font-weight: normal;
+      font-style: normal;
+      text-transform: uppercase;
+      color: #ACB2BF;
+      margin-bottom: 5px;
+      @include respond-to-max(767) {
+        font-size: 12px;
+        line-height: 18px;
+        }
+      }
+    h3 {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 15px;
+      @include respond-to-max(1024) {
+        font-size: 26px;
+        line-height: 36px;
+        }
+      }
+    .lvca-feature-details {
+      color: #9297A3;
+      font-size: 14px;
+      line-height: 24px;
+      @include respond-to-max(767) {
+        font-size: 13px;
+        line-height: 22px;
+        }
+      }
+    }
+  @include respond-to-min(768) {
+    .lvca-feature {
+      .lvca-text-content {
+        max-width: 520px;
+        padding: 0 50px;
+        .vc_row[data-vc-stretch-content="true"] & {
+          max-width: 600px;
+          }
+        }
+      &:nth-child(even) {
+        .lvca-image-content {
+          @include order(2);
+          }
+        .lvca-text-content {
+          @include order(1);
+          }
+        }
+      }
+    }
+  }
+
+.lvca-features:not(.lvca-tiled) {
+  @include respond-to-min(768) {
+    .lvca-feature {
+      margin-bottom: 80px;
+      .lvca-image-content {
+        max-width: 520px;
+        .vc_row[data-vc-stretch-content="true"] & {
+          margin: 0 auto;
+          max-width: 640px;
+          }
+        }
+      .lvca-text-content {
+        .vc_row[data-vc-stretch-content="true"] & {
+          margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+.lvca-features.lvca-tiled {
+  .lvca-feature {
+    .lvca-text-content {
+      margin: 0 auto; /* Center the text */
+      }
+    .lvca-image-content img {
+      width: 100%;
+      }
+    }
+  }

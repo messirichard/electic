@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<fields>
+			<fieldset name="grid_editor" label="General">
+
+				<field name="row_container_width" 
+					type="text"
+					default="100%"
+					label="Container Width"
+					unit="px or %"
+					description="The row container width">
+				</field>
+						
+				<field name="col_gutter" 
+					type="text"
+					default="15" 
+					label="Column Gutter"
+					unit="px"
+					description="The padding left and right of the row columns">
+				</field>
+					
+				<field name="col_border_gutter" 
+					type="text"
+					default=""
+					label="Column Border Gutter"
+					unit="px"
+					description="The padding left and right of the first and last columns. If empty it will be equal to col gutter">
+				</field>
+				
+				<field name="row_gutter" 
+					type="text"
+					default="10"
+					label="Row Gutter"
+					unit="px"
+					description="The padding top and bottom of the rows">
+				</field>
+				
+				<field name="space_between_addons" 
+					type="text"
+					default="10"
+					label="Space Between Addons"
+					unit="px"
+					description="The vertical space between addons">
+				</field>
+								
+			</fieldset>
+			
+			<fieldset name="row_titles" label="Row Titles">
+			
+				<field name="show_row_titles" 
+					type="radio"
+					default="default"
+					label="Show Row Titles"
+					description="Show row title">  
+						<option value="default" text="Default"></option>
+						<option value="yes" text="Yes"></option>
+						<option value="no" text="No"></option>
+				</field>
+			
+				<field name="row_title_css" 
+					type="textarea"
+					default="" 
+					label="Row Titles Css"
+					description="Row titles css">  
+				</field>
+				
+				<field name="row_titles_css_type" 
+					type="radio"
+					default="add"
+					label="Row Title Css Type"
+					description="Choose if the css will be added or overriden to global row title css">  
+						<option value="add" text="Add"></option>
+						<option value="override" text="Override"></option>
+				</field>
+				
+			</fieldset>
+	</fields>

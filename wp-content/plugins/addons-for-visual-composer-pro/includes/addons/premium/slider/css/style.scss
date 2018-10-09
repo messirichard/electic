@@ -1,0 +1,33 @@
+@import "../../../../../assets/css/lvca-lib";
+
+.lvca-slider {
+  position: relative;
+  padding: 0 0 40px 0;
+  .lvca-slide {
+    position: relative;
+    background: rgb(0, 0, 0) !important;
+    img {
+      transition: all .4s ease-in-out 0s;
+      opacity: 0.7;
+      }
+    &:hover {
+      img {
+        opacity: 0.5;
+        }
+      }
+    }
+
+  .lvca-flex-direction-nav a, .lvca-flex-direction-nav a:hover {
+    color: #ccc;
+    font-size: 32px;
+    width: 36px;
+    height: 36px;
+    margin: -18px 0 0;
+    &.lvca-flex-prev {
+      left: 20px;
+      }
+    &.lvca-flex-next {
+      right: 20px;
+      }
+    }
+  }

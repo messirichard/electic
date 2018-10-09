@@ -1,0 +1,332 @@
+@import "../../../../../assets/css/lvca-lib";
+.lvca-gallery-wrap {
+  clear: both;
+  .lvca-gallery-header {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    clear: both;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &.lvca-no-heading {
+      justify-content: center;
+      }
+    @include respond-to-max(800) {
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      }
+    }
+  .lvca-heading {
+    display: inline-block;
+    text-align: left;
+    max-width: none;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    margin: 0 100px 0 0;
+    .lvca-dark-bg & {
+      color: #e5e5e5;
+      }
+    @include respond-to-max(800) {
+      margin-bottom: 30px;
+      }
+    }
+  .lvca-taxonomy-filter {
+    display: block;
+    margin: 0;
+    padding: 0;
+    @include align-self(center);
+    @include respond-to-max(800) {
+      @include align-self(flex-start);
+      }
+    .lvca-filter-item {
+      position: relative;
+      display: inline-block;
+      margin: 0 0 15px 0;
+      padding: 0;
+      font-style: normal;
+      border-bottom: 1px solid #ddd;
+      .lvca-dark-bg & {
+        border-color: #444;
+        }
+      a {
+        font-size: 15px;
+        line-height: 24px;
+        transition: all .4s ease-in-out 0s;
+        display: block;
+        color: #777;
+        padding: 0 15px 15px;
+        .lvca-dark-bg & {
+          color: #999;
+          }
+        &:hover {
+          color: #222;
+          .lvca-dark-bg & {
+            color: #fff;
+            }
+          }
+        @include respond-to-max(479) {
+          padding: 0 10px 8px;
+          }
+        }
+      &.lvca-active {
+        a {
+          color: #222;
+          .lvca-dark-bg & {
+            color: #fff;
+            }
+          }
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-bottom: 3px solid #f94213;
+          width: 100%;
+          }
+        }
+      &:last-child {
+        margin-right: 0;
+        }
+      }
+    }
+  .lvca-gallery {
+    clear: both;
+    .lvca-gallery-item {
+      margin: 0;
+      .hentry {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        box-shadow: none;
+        }
+      .lvca-project-image {
+        position: relative;
+        overflow: hidden;
+        .fl-photo-content {
+          width: 100%;
+          }
+        img {
+          display: block;
+          width: 100%;
+          transition: all .4s ease-in-out 0s;
+          }
+        &:hover {
+          img {
+            filter: brightness(50%);
+            }
+          }
+        .lvca-image-info {
+          display: block;
+          text-align: center;
+          .lvca-entry-info {
+            text-align: center;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            max-width: 100%;
+            transform: translateY(-50%);
+            }
+          .lvca-entry-title {
+            padding: 10px;
+            margin: 0;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            color: #fff;
+            opacity: 0;
+            transition: opacity .4s ease-in-out 0s;
+            @include respond-to-max(1024) {
+              font-size: 18px;
+              line-height: 26px;
+              }
+            a {
+              display: inline;
+              color: #fff;
+              transition: all .3s ease-in-out 0s;
+              border-bottom: 1px solid transparent;
+              &:hover {
+                border-bottom: 1px solid #ccc;
+                }
+              }
+            }
+          .lvca-terms {
+            display: block;
+            color: #ddd;
+            font-size: 14px;
+            line-height: 22px;
+            font-style: italic;
+            opacity: 0;
+            transition: opacity .4s ease-in-out 0s;
+            }
+          .lvca-video-lightbox {
+            color: #fff;
+            font-size: 32px;
+            line-height: 1;
+            transition: color .4s ease-in-out 0s;
+            &:hover {
+              color: #ddd;
+              }
+            i {
+              font-size: 32px;
+              }
+            }
+          .lvca-lightbox-item {
+            display: block;
+            opacity: 0;
+            i {
+              position: absolute;
+              top: 0;
+              right: 0;
+              display: block;
+              color: #fff;
+              font-size: 22px;
+              line-height: 1;
+              padding: 12px;
+              transition: all .3s ease-in-out 0s;
+              }
+            &.lvca-click-icon {
+              background: transparent;
+              &:hover i {
+                background: rgba(0, 0, 0, 0.5);;
+                }
+              }
+            &.lvca-click-anywhere {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              }
+            }
+          }
+        &:hover {
+          .lvca-image-info {
+            .lvca-entry-title, .lvca-terms, .lvca-lightbox-item {
+              opacity: 1;
+              }
+            }
+          }
+        }
+      .lvca-html5-video {
+        video {
+          width: 100%;
+          height: auto;
+          margin: 0;
+          line-height: 1;
+          border: none;
+          object-fit: cover; /* Make poster occupy the entire video */
+          }
+        }
+      .lvca-youtube-video, .lvca-vimeo-video {
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 */
+        position: relative;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          }
+        }
+      }
+    }
+  .lvca-pagination {
+    clear: both;
+     display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 50px;
+    .lvca-page-nav {
+      $border-color: #dcdcdc;
+      @include flex(0 1 auto);
+      font-size: 15px;
+      line-height: 24px;
+      color: #666;
+      padding: 5px 15px;
+      border-right: 1px solid $border-color;
+      border-top: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+      outline: none;
+      transition: all .3s ease-in-out 0s;
+      cursor: pointer;
+      i {
+        color: #444;
+        font-size: 12px;
+        line-height: 1;
+        }
+      &:first-child {
+        border-left: 1px solid $border-color;
+        }
+      &[data-page="prev"], &[data-page="next"] {
+        padding: 5px 20px;
+        }
+      &[data-page="prev"] {
+        border-radius: 50px 0 0 50px;
+        }
+      &[data-page="next"] {
+        border-radius: 0 50px 50px 0;
+        }
+      &:hover, &.lvca-current-page {
+        background: #eee;
+        }
+      &.lvca-disabled, &.lvca-current-page {
+        pointer-events: none;
+        }
+      &.lvca-disabled, &.lvca-disabled i {
+        color: #999;
+        .lvca-dark-bg & {
+          color: #888;
+          }
+        }
+      .lvca-dark-bg & {
+        border-color: #606060;
+        color: #aaa;
+        i {
+          color: #ccc;
+          }
+        &:hover, &.lvca-current-page {
+          background: #333;
+          }
+        }
+      }
+    }
+  .lvca-load-more {
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 999px;
+    outline: none;
+    transition: all .3s ease-in-out 0s;
+    &:hover {
+      color: #eee;
+      background: #333;
+      border-color: #333;
+      }
+    &.lvca-disabled {
+      display: none;
+      }
+    }
+  .lvca-loading {
+    position: relative;
+    margin: 0 -51px 0 15px;
+    width: 36px;
+    height: 36px;
+    background: url(../assets/loading.gif) center center no-repeat;
+    visibility: hidden;
+    }
+  &.lvca-processing .lvca-loading {
+    visibility: visible;
+    }
+  }

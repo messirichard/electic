@@ -1,0 +1,19 @@
+
+@import "../../../../../assets/css/lvca-lib";
+
+input.lvca-button.lvca-with-icon, button.lvca-button.lvca-with-icon, a.lvca-button.lvca-with-icon, .lvca-button.lvca-with-icon:active, .lvca-button.lvca-with-icon:visited {
+  span, img.lvca-thumbnail {
+    margin-right: 15px;
+    }
+  span {
+    color: #fff;
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: 1;
+    }
+  img.lvca-thumbnail {
+    display: inline !important;
+    vertical-align: middle;
+    max-width: 50px;
+    }
+  }

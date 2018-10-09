@@ -1,0 +1,29 @@
+/* Style 1 */
+.lvca-faq-list.lvca-style1 .lvca-faq-item {
+  text-align: left; }
+  .lvca-faq-list.lvca-style1 .lvca-faq-item .lvca-faq-answer {
+    margin-top: 20px; }
+
+/* Style 2 */
+.lvca-faq-list.lvca-style2 .lvca-faq-item {
+  text-align: center; }
+  .lvca-faq-list.lvca-style2 .lvca-faq-item .lvca-faq-answer {
+    margin-bottom: 20px; }
+
+/* -------- General FAQ Styling -------- */
+.lvca-faq-list .lvca-faq-item {
+  margin-bottom: 60px;
+  font-size: 15px;
+  line-height: 24px; }
+  .lvca-faq-list .lvca-faq-item .lvca-faq-question {
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: none;
+    font-weight: bold;
+    color: #333; }
+  .lvca-dark-bg .lvca-faq-list .lvca-faq-item {
+    color: #909090; }
+    .lvca-dark-bg .lvca-faq-list .lvca-faq-item .lvca-faq-question {
+      color: #e5e5e5; }
+
+/*# sourceMappingURL=style.css.map */

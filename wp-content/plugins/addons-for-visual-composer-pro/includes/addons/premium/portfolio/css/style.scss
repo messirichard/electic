@@ -1,0 +1,15 @@
+@import "../../../../../assets/css/lvca-lib";
+
+.lvca-block-grid {
+  .lvca-block-inner {
+    transition: opacity .4s ease-in 0s;
+    margin-left: -20px;
+    margin-right: -20px;
+    }
+  .lvca-block-column {
+    padding: 20px;
+    }
+  .lvca-module {
+    padding: 0;
+    }
+  }
